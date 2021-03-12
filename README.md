@@ -15,7 +15,7 @@ Reflexionando sobre la escasez de tiempo y la opacidad de los canales privados p
 Mis **objetivos** con BAS son tres:
 
 1.  Contribuir a la difusión del uso de GAS, especialmente entre la comunidad educativa de habla hispana.
-2.  Impulsar la creación de una comunidad activa de usuarios que comparten ideas, experiencias y código.
+2.  Impulsar la creación de una comunidad activa de usuarios que compartan ideas, experiencias y código.
 3.  Y sobre todo, aprender y divertirme. Y es que no puedes decir que dominas algo hasta que no eres capaz de explicarlo con sencillez. Pues en eso estoy.
 
 Todo esto tiene, como ves, un enfoque claramente de _comunidad_. Por ello los artículos de BAS no se van a publicar en ninguno de mis espacios personales, sino que podrás encontrarlos en la [Comunidad de GEG Spain](https://comunidad.gedu.es/) (mientras me dejen 😅), etiquetados como `#BásicosAppsScript`. Mi intención es _construir comunidad_. Y para ello un blog no es el mejor lugar.
