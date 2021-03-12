@@ -1,4 +1,4 @@
-![Repo Básicos GAS](https://user-images.githubusercontent.com/12829262/110918547-93aee380-831b-11eb-88aa-9d400a08e647.png)
+![Repo Básicos GAS (1)](https://user-images.githubusercontent.com/12829262/110930737-c52eab80-8329-11eb-9e35-11f10c91a5b5.png)
 
 # ¿Qué es Básicos Apps Scripts?
 
