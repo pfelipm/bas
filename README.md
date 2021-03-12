@@ -2,7 +2,7 @@
 
 # ¿Qué es Básicos Apps Scripts?
 
-Frecuentemente recibo consultas relacionadas con la programación de **Google Apps Script (GAS)**. Su número ha experimentado un considerable aumento en los últimos meses (dicho esto en marzo de 2021), hasta el punto de que en estos momentos me está resultando francamente difícil poder responder a ellas como me gustaría. Yo uso GAS para automatizar cosas en mi trabajo, pero también realizo cierta divulgación a través de mis canales personales y programo cosas al margen de mis tareas estrictamente profesionales porque para mí constituye una senda de aprendizaje enriquecedora y extraordinariamente estimulante que ahora mismo quiero (_necesito_) recorrer.
+Frecuentemente recibo consultas relacionadas con el desarrollo de **Google Apps Script (GAS)**. Su número ha experimentado un considerable aumento en los últimos meses (dicho esto en marzo de 2021), hasta el punto de que en estos momentos me está resultando francamente difícil poder responder a ellas como me gustaría. Yo uso GAS para automatizar cosas en mi trabajo, pero también realizo cierta divulgación a través de mis canales personales y programo cosas al margen de mis tareas estrictamente profesionales porque para mí constituye una senda de aprendizaje enriquecedora y extraordinariamente estimulante que ahora mismo quiero (_necesito_) recorrer.
 
 En definitiva, que estoy en esto por pura motivación personal. Y el espacio - tiempo personales ya sabemos que son limitados (_axioma vital nº 1_) y parecen tender a menguar con los años (_axioma vital nº 2_). Por tanto, vayan por delante mis disculpas 🙏 si me has escrito y (aún) no te he contestado o no lo he hecho con el detenimiento que te mereces.
 
