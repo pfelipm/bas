@@ -24,7 +24,7 @@ Además, utilizaré este repositorio para recoger todos los fragmentos de códig
 
 Pues esta es la idea... en primera instancia. Tengo algunas otras cosas en mente para potenciar todo esto, pero me las guardo por ahora. Prefiero pensar en grande pero actuar en pequeño. Veamos primero si soy capaz de hacer que BAS alcance tracción.
 
-Pablo Felip Monferrer  
+**Pablo Felip Monferrer**  
 [@pfelipm](https://twitter.com/pfelipm) · [linkedin.com/in/pfelipm](https://www.linkedin.com/in/pfelipm/)
 
 # BAS publicados
