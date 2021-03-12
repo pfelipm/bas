@@ -18,7 +18,7 @@ Mis **objetivos** con BAS son tres:
 2.  Impulsar la creación de una comunidad activa de usuarios que compartan ideas, experiencias y código.
 3.  Y sobre todo, aprender y divertirme. Y es que no puedes decir que dominas algo hasta que no eres capaz de explicarlo con sencillez. Pues en eso estoy.
 
-Todo esto tiene, como ves, un enfoque claramente de _comunidad_. Por ello los artículos de BAS no se van a publicar en ninguno de mis espacios personales, sino que podrás encontrarlos en la [Comunidad de GEG Spain](https://comunidad.gedu.es/) (mientras me dejen 😅), etiquetados como `#BásicosAppsScript`. Mi intención es _construir comunidad_. Y para ello un blog no es el mejor lugar.
+Todo esto tiene, como ves, un enfoque claramente de _comunidad_. Por ello las píldoras BAS no se van a publicar en ninguno de mis espacios personales, sino que podrás encontrarlos en la sección [Área Developers](https://comunidad.gedu.es/feed/%C3%A1rea-developers) de la [Comunidad de GEG Spain](https://comunidad.gedu.es/) (mientras me dejen 😅), etiquetados como `#BásicosAppsScript`. Mi intención es _construir comunidad_. Y para ello un blog no es el mejor lugar.
 
 Además, utilizaré este repositorio para recoger todos los fragmentos de código que acompañarán a los BAS publicados, que encontrarás justo aquí abajo 👇 convenientemente relacionados cronológicamente y enlazados.
 
@@ -27,6 +27,6 @@ Pues esta es la idea... en primera instancia. Tengo algunas otras cosas en mente
 **Pablo Felip Monferrer**  
 [@pfelipm](https://twitter.com/pfelipm) · [linkedin.com/in/pfelipm](https://www.linkedin.com/in/pfelipm/)
 
-# BAS publicados
+# Píldoras BAS publicadas 💊
 
 *   \[13/03/21\] BAS#01. Consolidar un intervalo de datos de todas las hojas de cálculo contenidas en una carpeta de Drive.
