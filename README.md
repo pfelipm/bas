@@ -10,9 +10,9 @@ Las consultas que recibo suelen estar relacionadas con problemas sencillos que r
 
 Reflexionando sobre la escasez de tiempo y la opacidad de los canales privados para tratar cuestiones que podrían resultar de interés para la comunidad, me ha parecido una buena idea crear **Básicos Apps Script {BAS}**.
 
-> **BAS** pretende ser una serie de artículos en los que explicaré cómo resolver problemas sencillo que pueden ser abordados fácilmente con unas pocas líneas de código GAS. A veces mostraré la solución a alguna consulta recibida, tal cual. En otras ocasiones resolveré problemas similares, más generales, o simplemente inspirados en ellas.
+> **BAS** pretende ser una serie de artículos en los que explicaré cómo resolver problemas sencillo que pueden ser abordados fácilmente con unas pocas líneas de código GAS. Unas veces mostraré la solución al problema planteado en alguna de las consultas recibidas, tal cual. En otras abordaré problemas similares, más generales, o simplemente inspirados en ellas.
 
-Mis objetivos con BAS son tres:
+Mis **objetivos** con BAS son tres:
 
 1.  Contribuir a la difusión del uso de GAS, especialmente entre la comunidad educativa de habla hispana.
 2.  Impulsar la creación de una comunidad activa de usuarios que compartan ideas, experiencias y código.
