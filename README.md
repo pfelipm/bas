@@ -29,4 +29,4 @@ Además, utilizaré este repositorio para recoger todos los fragmentos de códig
 
 # Píldoras BAS publicadas 💊
 
-*   \[13/03/21\] BAS#01. Consolidar un intervalo de datos de todas las hojas de cálculo contenidas en una carpeta de Drive.
+*   \[13/03/21\] BAS#001. Consolidar un intervalo de datos de todas las hojas de cálculo contenidas en una carpeta de Drive.
