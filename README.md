@@ -1,2 +1,3 @@
 # BAS
-Básicos Apps Script · Un conjunto de fragmentos de código simples publicados con finalidad didáctica
+
+Básicos Apps Script · Un conjunto de fragmentos sencillos de código Apps Script publicados con finalidad didáctica
