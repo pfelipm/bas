@@ -28,3 +28,5 @@ Pablo Felip Monferrer
 [@pfelipm](https://twitter.com/pfelipm) · [linkedin.com/in/pfelipm](https://www.linkedin.com/in/pfelipm/)
 
 # BAS publicados
+
+*   \[13/03/21\] BAS#01. Consolidar un intervalo de datos de todas las hojas de cálculo contenidas en una carpeta de Drive.
