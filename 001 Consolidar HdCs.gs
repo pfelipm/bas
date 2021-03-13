@@ -1,24 +1,23 @@
 /**
  * Importa intervalos de datos idénticos procedentes de todas
  * las hdc que se encuentran en la carpeta indicada
- * y los consolida (reúne) en la actual.
- * Importante:
- *   1. No realiza ningún control de errores.
- *   2. El orden de importación no está garantizado.
+ * y los consolida en la actual.
+ * No realiza ningún control de errores.
+ * El orden de importación no está garantizado.
  * Demo: https://drive.google.com/drive/folders/1BZNT5TNcOpKaP5Hy3BuvVZhT_FhtrWjr?usp=sharing
  */
 
-const ID_CARPETA_ORIGEN = '1bqlCmxWaL-LCNb6T7vOWNtPky3bK99K-';
-const RANGO_ORIGEN = 'Hoja 1!A1:E5';
-const CELDA_DESTINO = 'Hoja 1!A1';
-
 function consolidar() {
+
+  const ID_CARPETA_ORIGEN = '1bqlCmxWaL-LCNb6T7vOWNtPky3bK99K-';
+  const RANGO_ORIGEN = 'Hoja 1!A2:E';
+  const CELDA_DESTINO = 'Hoja 1!A2';
 
   // Obtener referencias a las hdc dentro de la carpeta
   const hdcsOrigen = DriveApp.getFolderById(ID_CARPETA_ORIGEN).getFilesByType(MimeType.GOOGLE_SHEETS);
 
   // Lista de IDs de las hdc halladas
-  let idHdcs = [];
+  const idHdcs = [];
 
   // Obtener todos los IDs por medio del iterador
   while (hdcsOrigen.hasNext()) {
@@ -31,7 +30,7 @@ function consolidar() {
     let datos = SpreadsheetApp.openById(hdc).getRange(RANGO_ORIGEN).getValues();
 
     // Opcional: elimina filas vacías del intervalo de cada HdC
-    datos = datos.filter(fila => fila.some(celda => celda != ''))
+    datos = datos.filter(fila => fila.some(celda => celda != ''));
 
     // Consolidar datos
     datosConsolidados = [...datosConsolidados, ...datos];
