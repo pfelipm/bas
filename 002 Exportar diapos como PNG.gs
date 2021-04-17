@@ -49,8 +49,8 @@ function exportarDiaposPngUrl() {
   // Enumerar diapositivas y exportar en formato PNG
   diapos.forEach((diapo, num) => {
   
-   // Obtener blob de la diapositiva exportada en png
-   const blobDiapo = UrlFetchApp.fetch(`${url}&pageid=${diapo.getObjectId()}`).getBlob();
+    // Obtener blob de la diapositiva exportada en png
+    const blobDiapo = UrlFetchApp.fetch(`${url}&pageid=${diapo.getObjectId()}`).getBlob();
 
     // Por fin, creamos imágenes a partir de los blobs obtenidos para cada diapo,
     // nombres precedidos por nº de diapositiva con relleno de 0s por la izquierda
