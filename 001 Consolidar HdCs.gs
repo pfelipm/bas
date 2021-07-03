@@ -4,7 +4,7 @@
  * y los consolida en la actual.
  * No realiza ningún control de errores.
  * El orden de importación no está garantizado.
- * Demo: https://drive.google.com/drive/folders/1BZNT5TNcOpKaP5Hy3BuvVZhT_FhtrWjr?usp=sharing
+ * Demo: https://drive.google.com/drive/folders/1BZNT5TNcOpKaP5Hy3BuvVZhT_FhtrWjr
  * 
  * BAS#001 Copyright (C) Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
  */
