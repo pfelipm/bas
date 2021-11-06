@@ -24,7 +24,7 @@ function exportarDiaposPngUrl() {
   const idPresentacion = presentacion.getId();
   // Presentación en Drive
   const presentacionDrive = DriveApp.getFileById(idPresentacion);
-  // Carpeta donde se encuentra en la presentación
+  // Carpeta donde se encuentra la presentación
   const carpeta  = presentacionDrive.getParents().next();
   // Nombre de la carpeta de exportación para los PNG
   const nombreCarpetaExp = `Miniaturas {${idPresentacion}}`; 
