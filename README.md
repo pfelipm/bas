@@ -1,5 +1,5 @@
-![Repo Básicos GAS (1)](https://user-images.githubusercontent.com/12829262/110930737-c52eab80-8329-11eb-9e35-11f10c91a5b5.png)
-[![Created with - Google Apps Script](https://img.shields.io/static/v1?label=Created+with&message=Google+Apps+Script&color=blue)](https://developers.google.com/apps-script)
+![Repo Básicos GAS (1)](https://user-images.githubusercontent.com/12829262/110930737-c52eab80-8329-11eb-9e35-11f10c91a5b5.png)  
+[![Creado con - Google Apps Script](https://img.shields.io/static/v1?label=Creado+con&message=Google+Apps+Script&color=blue&logo=GAS)](https://developers.google.com/apps-script)
 
 # ¿Qué es Básicos Apps Scripts?
 
