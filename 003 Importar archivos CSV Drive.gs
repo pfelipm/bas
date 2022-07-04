@@ -2,7 +2,7 @@
  * Exporta todas las diapositivas de la presentación como imágenes PNG
  * en una carpeta junto a la propia presentación.
  * No se realiza ningún control de errores.
- * Demo: https://drive.google.com/drive/u/0/folders/1dahbbyFE-3ixc_rHOA8--ufx3idgSGBM
+ * Demo: https://drive.google.com/drive/folders/1QnLKXh5KWSUzzg92hpBYjIviee9N-W3l?usp=sharing
  * 
  * BAS#002 Copyright (C) Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
  */
