@@ -19,7 +19,7 @@ Mis **objetivos** con {BAS} son tres:
 2.  Impulsar la creación de una comunidad activa de usuarios que compartan ideas, experiencias y código.
 3.  Y sobre todo, aprender y divertirme. Y es que no puedes decir que dominas algo hasta que no eres capaz de explicarlo con sencillez. Pues en eso estoy.
 
-Las dos primeras píldoras BAS se publicaron en la sección [Área Developers](https://comunidad.gedu.es/feed/%C3%A1rea-developers) de la [Comunidad de GEG Spain](https://comunidad.gedu.es/), etiquetadas como `#BásicosAppsScript`. A partir de la tercera, pasan a mi blog, [pablofelip.online](https://pablofelip.online/post/bas/).
+Las dos primeras píldoras {BAS} se publicaron en la sección [Área Developers](https://comunidad.gedu.es/feed/%C3%A1rea-developers) de la [Comunidad de GEG Spain](https://comunidad.gedu.es/), etiquetadas como `#BásicosAppsScript`. A partir de la tercera, pasan a mi blog, [pablofelip.online](https://pablofelip.online/post/bas/).
 
 Además, utilizaré este repositorio para recoger todos los fragmentos de código que acompañarán a los BAS publicados, que encontrarás justo aquí abajo 👇👇👇 convenientemente relacionados cronológicamente y enlazados.
 
