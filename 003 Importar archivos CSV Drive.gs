@@ -1,61 +1,79 @@
 /**
- * Exporta todas las diapositivas de la presentación como imágenes PNG
- * en una carpeta junto a la propia presentación.
- * No se realiza ningún control de errores.
+ * Este script importa el contenido de los dos archivos
+ * csv indicados en la hoja "Importación", sustituyendo
+ * el contenido de las hojas destino o anexando datos.
+ * 
+ * Se trata de una simple demostración de lo sencillo
+ * que resulta acceder al contenido de archivos csv
+ * almacenados en Google Drive usando Apps Script.
+
  * Demo: https://drive.google.com/drive/folders/1QnLKXh5KWSUzzg92hpBYjIviee9N-W3l?usp=sharing
  * 
- * BAS#002 Copyright (C) Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
+ * BAS#003 Copyright (C) 2022 Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
+ * 
+ * @OnlyCurrentDoc
  */
 
-/**
- * Añadir menú personalizado
- */
-function onOpen() {
-  SlidesApp.getUi().createMenu('Slides2PNG')
-    .addItem('Exportar diapositivas como PNG', 'exportarDiaposPngUrl')
-    .addToUi();
-}
+function importarCsv() {
 
-/* Exporta todas las diapos como png en carpeta de Drive junto a la presentación */
-function exportarDiaposPngUrl() {
+  // Constantes de parametrización del script
+  const AJUSTES = {
+    hoja: 'Importación',
+    nombre1: 'B3',
+    nombre2: 'E3',
+    hojaDestino1: 'B6',
+    hojaDestino2: 'E6',
+    anexar: 'B8',
+    resultado: 'B12'
+  };
 
-  // Presentación sobre la que estamos trabajando
-  const presentacion = SlidesApp.getActivePresentation();
-  const idPresentacion = presentacion.getId();
-  // Presentación en Drive
-  const presentacionDrive = DriveApp.getFileById(idPresentacion);
-  // Carpeta donde se encuentra en la presentación
-  const carpeta  = presentacionDrive.getParents().next();
-  // Nombre de la carpeta de exportación para los PNG
-  const nombreCarpetaExp = `Miniaturas {${idPresentacion}}`; 
+  //  Hoja de cálculo y pestaña de ajustes
+  const hdc = SpreadsheetApp.getActive()
+  const hoja = hdc.getSheetByName(AJUSTES.hoja);
 
-  // Si la carpeta de exportación ya existe la eliminamos para evitar duplicados (¡con el mismo nombre!)
-  if (carpeta.getFoldersByName(nombreCarpetaExp).hasNext()) {
-    carpeta.getFoldersByName(nombreCarpetaExp).next().setTrashed(true);
+  // Señalizar inicio del proceso
+  hoja.getRange(AJUSTES.resultado).setValue('🟠 Importando archivos csv...');
+  let resultado = '🔴 No se ha podido realizar la importación';
+
+  // Trata de abrir los archivos csv indicados por el usuario
+  const carpeta = DriveApp.getFileById(hdc.getId()).getParents().next();
+  const csv1 = carpeta.getFilesByName(hoja.getRange(AJUSTES.nombre1).getValue() + '.csv');
+  const csv2 = carpeta.getFilesByName(hoja.getRange(AJUSTES.nombre2).getValue() + '.csv');
+
+  // ¿Existen ambos archivos?
+  if (csv1.hasNext() && csv2.hasNext()) {
+
+    // Drive → Blob → Texto → String[][] 
+    // Espera que el delimitados sea un coma [,], en caso contrario usar
+    // parseCsv(csv, delimiter)
+    // https://developers.google.com/apps-script/reference/utilities/utilities#parsecsvcsv,-delimiter
+    const datos1 = Utilities.parseCsv(csv1.next().getBlob().getDataAsString());
+    const datos2 = Utilities.parseCsv(csv2.next().getBlob().getDataAsString());
+
+    // Obtener hojas destino
+    const hojaDestino1 = hdc.getSheetByName(hoja.getRange(AJUSTES.hojaDestino1).getValue());
+    const hojaDestino2 = hdc.getSheetByName(hoja.getRange(AJUSTES.hojaDestino2).getValue());
+    
+    // Anexamos o sobreescribimos datos según ajuste en hoja "Importación"
+    const anexar = hoja.getRange(AJUSTES.anexar).getValue();
+    if (anexar) {
+      hojaDestino1.getRange(hojaDestino1.getLastRow() + 1, 1, datos1.length - 1, datos1[0].length)
+        .setValues(datos1.slice(1));
+      hojaDestino2.getRange(hojaDestino2.getLastRow() + 1, 1, datos1.length - 1, datos2[0].length)
+        .setValues(datos2.slice(1));
+    } else {
+      hojaDestino1.clearContents()
+        .getRange(1, 1, datos1.length, datos1[0].length).setValues(datos1);
+      hojaDestino2.clearContents()
+        .getRange(1, 1, datos2.length, datos2[0].length).setValues(datos2);
+    }
+
+    // Si llegamos aquí es que todo ha ido aparentemente bien
+    resultado = '🟢 Importación de datos finalizada';
+
   }
 
-  // Crear carpeta de exportación
-  const carpetaExp = carpeta.createFolder(nombreCarpetaExp);
-
-  // Lista de diapositivas en la presentación
-  const diapos = presentacion.getSlides();
-
-  // ¿Cuántos dígitos necesitamos para representar el nº de orden de la imagen exportada?
-  const nDigitos = parseInt(diapos.length.toString().length);
-
-  // URL "mágico" para la exportación PNG
-  const url = `https://docs.google.com/presentation/d/${idPresentacion}/export/png?access_token=${ScriptApp.getOAuthToken()}`; 
-
-  // Enumerar diapositivas y exportar en formato PNG
-  diapos.forEach((diapo, num) => {
-  
-    // Obtener blob de la diapositiva exportada en png
-    const blobDiapo = UrlFetchApp.fetch(`${url}&pageid=${diapo.getObjectId()}`).getBlob();
-
-    // Por fin, creamos imágenes a partir de los blobs obtenidos para cada diapo,
-    // nombres precedidos por nº de diapositiva con relleno de 0s por la izquierda
-    carpetaExp.createFile(blobDiapo.setName(`Diapositiva ${String(num + 1).padStart(nDigitos, '0')}`));
-  
-  });
+  // Señalizar fin/resultado del proceso
+  hoja.getRange(AJUSTES.resultado).setValue(resultado);
 
 }
