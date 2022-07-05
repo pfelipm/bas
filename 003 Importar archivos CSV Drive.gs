@@ -43,7 +43,7 @@ function importarCsv() {
   // ¿Existen ambos archivos?
   if (csv1.hasNext() && csv2.hasNext()) {
 
-    // Drive → Blob → Texto → String[][] 
+    // Drive File → Blob → String → String[][] 
     // Espera que el delimitados sea un coma [,], en caso contrario usar
     // parseCsv(csv, delimiter)
     // https://developers.google.com/apps-script/reference/utilities/utilities#parsecsvcsv,-delimiter
