@@ -1,15 +1,15 @@
 /** 
- * Este script extrae los URL de edición de las respuestas recibidas en el formulario
- * indicado por el usuario en la celda PARAMETROS.url, además de otros campos adicionales
- * opcionales. Todas las respuestas deben tener el mismo nº de preguntas que se recuperan
- * como identificación (celda numCampos).
+ * Este script extrae los URL de edición de las respuestas recibidas en el formulario indicado por
+ * el usuario en la celda PARAMETROS.url, además de otra información adicional opcional. Todas las
+ * respuestas deben tener el mismo nº de preguntas que se recuperan (celda numCampos).
  * 
- * Demo: https://drive.google.com/drive/folders/1QnLKXh5KWSUzzg92hpBYjIviee9N-W3l?usp=sharing
+ * Demo: https://drive.google.com/drive/folders/1jsduftDuOtSb3bmfGsbAwzXHMWidVcOn?usp=sharing
  * 
  * BAS#004 Copyright (C) 2022 Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
  * 
  * @OnlyCurrentDoc
  */
+
 function resumirRespuestas() {
 
   // Constantes de parametrización del script
