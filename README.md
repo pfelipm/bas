@@ -31,3 +31,4 @@ Además, utilizaré este repositorio para recoger todos los fragmentos de códig
 *   \[13/03/21\] [BAS#001](https://comunidad.gedu.es/post/bas-001-consolidar-un-intervalo-de-datos-de-todas-las-hojas-de-calculo-cont--604d1f5765b46249cb2ba391). Consolidar un intervalo de datos de todas las hojas de cálculo contenidas en una carpeta de Drive.
 *   \[11/04/21\] [BAS#002](https://comunidad.gedu.es/post/bas-002-exportar-diapositivas-de-una-presentacion-como-png-6072aa8f5c5c167af76f8508). Exportar diapositivas de una presentación como PNG.
 *   \[05/07/22\] [BAS#003](https://pablofelip.online/importar-csv-drive-apps-script/). Importar archivos CSV desde Drive.
+*   \[29/07/22\] [BAS#004](https://pablofelip.online/extraer-url-edicion-respuestas-formulario-apps-script/). Obtener los URL de edición respuestas de un formulario
