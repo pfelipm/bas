@@ -84,8 +84,9 @@ function resumirRespuestas() {
     const tabla = [encabezados, ...datos];
        
     // Escribir tabla en la hoja de cálculo, borrando datos previos, si los hay
-    if (hoja.getLastRow() > PARAMETROS.filaTabla) {
-      hoja.getRange(PARAMETROS.filaTabla, 1, hoja.getLastRow() - PARAMETROS.filaTabla + 1, hoja.getLastColumn()).clearContent();
+    ultimaFila = hoja.getLastRow();
+    if (ultimaFila > PARAMETROS.filaTabla) {
+      hoja.getRange(PARAMETROS.filaTabla, 1, ultimaFila - PARAMETROS.filaTabla + 1, hoja.getLastColumn()).clearContent();
     }
     hoja.getRange(PARAMETROS.filaTabla, 1, tabla.length, tabla[0].length).setValues(tabla);
 
