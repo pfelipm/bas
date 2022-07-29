@@ -101,7 +101,7 @@ function resumirRespuestas() {
   } finally {
     // Esto se ejecuta siempre, tanto si hemos cazado algún error como si todo ha ido ok,
     // contenido de la tabla en color habitual.
-    ultimaFila = hoja.getLastRow()
+    ultimaFila = hoja.getLastRow();
     if (ultimaFila > PARAMETROS.filaTabla) {
       hoja.getRange(PARAMETROS.filaTabla + 1,1, hoja.getLastRow() - PARAMETROS.filaTabla + 1, hoja.getLastColumn()).setFontColor(null);
     }
