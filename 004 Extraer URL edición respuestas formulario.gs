@@ -72,8 +72,8 @@ function resumirRespuestas() {
           // como simple precaución, ver https://developers.google.com/apps-script/reference/forms/item-response#getresponse
         filaDatos.push(
           Array.isArray(item.getResponse())
-        ? item.getResponse().flat().join(', ')
-        : item.getResponse());
+          ? item.getResponse().flat().join(', ')
+          : item.getResponse());
       });
       if (urlSiNo) filaDatos.push(respuesta.getEditResponseUrl());
       return filaDatos;
