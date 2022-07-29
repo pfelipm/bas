@@ -103,7 +103,7 @@ function resumirRespuestas() {
     // contenido de la tabla en color habitual.
     ultimaFila = hoja.getLastRow();
     if (ultimaFila > PARAMETROS.filaTabla) {
-      hoja.getRange(PARAMETROS.filaTabla + 1,1, hoja.getLastRow() - PARAMETROS.filaTabla + 1, hoja.getLastColumn()).setFontColor(null);
+      hoja.getRange(PARAMETROS.filaTabla + 1,1, ultimaFila - PARAMETROS.filaTabla + 1, hoja.getLastColumn()).setFontColor(null);
     }
   }
 
