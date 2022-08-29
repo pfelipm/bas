@@ -96,7 +96,7 @@ function resumirRespuestas() {
   } catch(e) {
     // Informar de error, si el objeto e es de tipo string es porque hemos llegado
     // aquí al fallar la comprobación de existencia de respuestas (¡sucio!).
-    hdc.toast(typeof e == 'string' ? e: `Error interno: ${e.message}`, 'No hay respuestas en el formulario');
+    hdc.toast(typeof e == 'string' ? e : `Error interno: ${e.message}`, 'No hay respuestas en el formulario');
   
   } finally {
     // Esto se ejecuta siempre, tanto si hemos cazado algún error como si todo ha ido ok,
