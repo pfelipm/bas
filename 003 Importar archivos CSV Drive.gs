@@ -9,9 +9,9 @@
 
  * Demo: https://drive.google.com/drive/folders/1QnLKXh5KWSUzzg92hpBYjIviee9N-W3l?usp=sharing
  * 
- * BAS#003 Copyright (C) 2022 Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
+ * BAS#003 Copyright (C) 2022 Pablo Felip (@pfelipm)
  * 
- * @OnlyCurrentDoc
+ * Se distribuye bajo licencia MIT
  */
 
 function importarCsv() {
