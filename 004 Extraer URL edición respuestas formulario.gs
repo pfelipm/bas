@@ -5,9 +5,9 @@
  * 
  * Demo: https://drive.google.com/drive/folders/1jsduftDuOtSb3bmfGsbAwzXHMWidVcOn?usp=sharing
  * 
- * BAS#004 Copyright (C) 2022 Pablo Felip (@pfelipm) · Se distribuye bajo licencia MIT.
+ * BAS#004 Copyright (C) 2022 Pablo Felip (@pfelipm)
  * 
- * @OnlyCurrentDoc
+ * Se distribuye bajo licencia MIT
  */
 
 function resumirRespuestas() {
