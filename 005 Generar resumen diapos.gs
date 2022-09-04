@@ -142,7 +142,7 @@ function generarResumen() {
                               `${numDiapos} miniatura(s) generada(s) en aproximadamente ${Math.round((t2 - t1)/1000)}".`,
                               ui.ButtonSet.OK);
 
-  } catch(e) {
+  } catch (e) {
     DocumentApp.getUi().alert('🔴 BAS#005', typeof e == 'string' ? e : `Error interno: ${e.message}.`, ui.ButtonSet.OK);
   }
 
