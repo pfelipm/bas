@@ -68,8 +68,8 @@ function resumirRespuestas() {
       if (fechaSiNo) filaDatos.push(respuesta.getTimestamp());
       if (emailSiNo) filaDatos.push(respuesta.getRespondentEmail());
       respuesta.getItemResponses().slice(0, numCampos).forEach(item => {
-          // getResponse() pude devolver String | String | String[][], así que se aplana el array con profundidad 2,
-          // como simple precaución, ver https://developers.google.com/apps-script/reference/forms/item-response#getresponse
+          // getResponse() pude devolver String | String | String[][], aplanaremos los arrays y generaremos una cadena de texto
+          // con valores separados por comas, ver https://developers.google.com/apps-script/reference/forms/item-response#getresponse
         filaDatos.push(
           Array.isArray(item.getResponse())
           ? item.getResponse().flat().join(', ')
