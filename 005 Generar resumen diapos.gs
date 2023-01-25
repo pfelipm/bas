@@ -1,5 +1,5 @@
 /**
- * Genera un tabla de miniaturas de diapositivas que incluye los comentarios del presentador a
+ * Genera un tabla de miniaturas de diapositivas que incluye los comentarios del presentador
  * a partir de una presentación de Google en un documento de Google Docs.
  *
  * Demo: https://drive.google.com/drive/folders/1Ui5QZRRUb0kkpzTTyNzjQzsiI9SjPWqv
